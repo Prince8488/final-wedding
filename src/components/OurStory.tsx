@@ -64,15 +64,15 @@ export function OurStory() {
         </div>
 
         {/* Timeline Milestones */}
-        <div className="relative border-l-2 border-[#d4af37]/30 ml-4 sm:ml-32 space-y-12 py-4">
+        {/* <div className="relative border-l-2 border-[#d4af37]/30 ml-4 sm:ml-32 space-y-12 py-4">
           {story.milestones.map((item, idx) => (
             <div key={idx} className="relative group pl-6 sm:pl-10">
-              {/* Timeline Marker Ring */}
+
               <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-[#180f0c] border-2 border-[#d4af37] flex items-center justify-center text-[#d4af37] group-hover:bg-[#d4af37] group-hover:text-[#0f0907] transition-all duration-300 shadow-lg">
                 <Heart className="w-3.5 h-3.5" />
               </div>
 
-              {/* Year badge */}
+
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#251814] border border-[#d4af37]/40 text-[#d4af37] text-xs font-sans-clean font-semibold mb-2">
                 <span>{item.year}</span>
                 <span>&bull;</span>
@@ -82,7 +82,7 @@ export function OurStory() {
                 </span>
               </div>
 
-              {/* Card Content */}
+  
               <div className="bg-[#170e0b]/70 border border-[#d4af37]/25 rounded-2xl p-5 sm:p-6 shadow-xl backdrop-blur-sm group-hover:border-[#d4af37]/60 transition-all">
                 <h4 className="text-xl sm:text-2xl font-serif-royal font-bold text-[#fcf6ba] mb-2">
                   {item.title}
@@ -95,7 +95,7 @@ export function OurStory() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

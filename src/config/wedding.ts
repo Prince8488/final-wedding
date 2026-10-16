@@ -66,29 +66,29 @@ export const weddingConfig = {
       "Of all the unexpected things life brought us, finding each other was the most beautiful. And choosing each other, our forever",
     milestones: [
       {
-        year: "November 2018",
-        title: "The First Glance",
-        location: "Our First Company",
-        description:
-          "{{groom}} first saw {{bride}} when she joined the company as an intern. It was love at first sight for him — a feeling that began quietly, before either of them knew how much their story would come to mean.",
+        //     year: "November 2018",
+        //     title: "The First Glance",
+        //     location: "Our First Company",
+        //     description:
+        //       "{{groom}} first saw {{bride}} when she joined the company as an intern. It was love at first sight for him — a feeling that began quietly, before either of them knew how much their story would come to mean.",
         image: image("couple-portrait.jpg"),
       },
-      {
-        year: "2018 onwards",
-        title: "From Friendship to Forever",
-        location: "Bus Rides, Parks & Little Adventures",
-        description:
-          "Little by little, we became friends, shared our feelings, and grew closer. We spent long hours talking on bus rides, stayed on phone calls until midnight, met in parks, went out together, and made countless happy memories. There was no single formal proposal; our relationship developed naturally, through time, trust, and the joy of being together. Even as we changed companies, we stayed connected.",
-        image: image("sangeet-night.jpg"),
-      },
-      {
-        year: "November 2026",
-        title: "The Eternal Promise",
-        location: "Narmadapuram, Madhya Pradesh",
-        description:
-          "Our journey has carried us through beautiful memories and real challenges, including the effort to earn family approval. Now, on 25 November 2026, we look forward to beginning our married life surrounded by our loved ones, carrying every conversation, every laugh, and every chapter that brought us here into the future we will build together.",
-        image: image("mandap-decor.jpg"),
-      },
+      //   {
+      //     year: "2018 onwards",
+      //     title: "From Friendship to Forever",
+      //     location: "Bus Rides, Parks & Little Adventures",
+      //     description:
+      //       "Little by little, we became friends, shared our feelings, and grew closer. We spent long hours talking on bus rides, stayed on phone calls until midnight, met in parks, went out together, and made countless happy memories. There was no single formal proposal; our relationship developed naturally, through time, trust, and the joy of being together. Even as we changed companies, we stayed connected.",
+      //     image: image("sangeet-night.jpg"),
+      //   },
+      //   {
+      //     year: "November 2026",
+      //     title: "The Eternal Promise",
+      //     location: "Narmadapuram, Madhya Pradesh",
+      //     description:
+      //       "Our journey has carried us through beautiful memories and real challenges, including the effort to earn family approval. Now, on 25 November 2026, we look forward to beginning our married life surrounded by our loved ones, carrying every conversation, every laugh, and every chapter that brought us here into the future we will build together.",
+      //     image: image("mandap-decor.jpg"),
+      //   },
     ],
   },
   families: [
