@@ -41,7 +41,7 @@ export const weddingConfig = {
     city: "Narmadapuram",
     region: "Madhya Pradesh",
     mapUrl:
-      "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m20!1m10!3m9!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!2sHotel+Meenakshi+Rooms+%26+Rooftop+Restaurant!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/data=!4m20!1m10!3m9!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!2sHotel+Meenakshi+Rooms+%26+Rooftop+Restaurant!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
     phoneNumber: "09708080804",
     phoneHref: "tel:+919708080804",
     image: image("hero-palace.jpg"),
@@ -107,7 +107,7 @@ export const weddingConfig = {
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
-        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/",
+        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
       dressCode: "Indo-Western Glamour & Sparkle",
       dressCodeSwatches: ["#1a237e", "#7b1fa2", "#ffd700", "#000000"],
       description:
@@ -127,7 +127,7 @@ export const weddingConfig = {
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
-        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/",
+        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
       dressCode: "Sunlit Yellow, Ochre & Floral Ethnic",
       dressCodeSwatches: ["#fbc02d", "#fff59d", "#ff9800", "#4caf50"],
       description:
@@ -148,7 +148,7 @@ export const weddingConfig = {
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
-        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/",
+        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
       dressCode: "Royal Heritage Traditional (Maroon, Crimson & Ivory Gold)",
       dressCodeSwatches: ["#800020", "#d4af37", "#fcf6ba", "#4a0011"],
       description:
