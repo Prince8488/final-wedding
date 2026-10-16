@@ -1,3 +1,6 @@
+const image = (filename: string) =>
+  `${import.meta.env.BASE_URL}images/${filename}`;
+
 export const weddingConfig = {
   couple: {
     groom: {
@@ -41,7 +44,7 @@ export const weddingConfig = {
       "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m20!1m10!3m9!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!2sHotel+Meenakshi+Rooms+%26+Rooftop+Restaurant!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
     phoneNumber: "09708080804",
     phoneHref: "tel:+919708080804",
-    image: "/images/hero-palace.jpg",
+    image: image("hero-palace.jpg"),
     imageAlt: "Wedding celebration venue",
     description:
       "Located in Narmadapuram, Madhya Pradesh, the venue welcomes family and friends to celebrate the wedding.",
@@ -53,7 +56,7 @@ export const weddingConfig = {
     tagline: "The Wedding Celebration",
     invitation:
       "Together with their families, request the honour of your presence as they unite in sacred matrimony.",
-    image: "/images/hero-palace.jpg",
+    image: image("hero-palace.jpg"),
     imageAlt: "Hotel Meenakshi Wedding Venue, Narmadapuram",
   },
   story: {
@@ -68,7 +71,7 @@ export const weddingConfig = {
         location: "Our First Company",
         description:
           "{{groom}} first saw {{bride}} when she joined the company as an intern. It was love at first sight for him — a feeling that began quietly, before either of them knew how much their story would come to mean.",
-        image: "/images/couple-portrait.jpg",
+        image: image("couple-portrait.jpg"),
       },
       {
         year: "2018 onwards",
@@ -76,7 +79,7 @@ export const weddingConfig = {
         location: "Bus Rides, Parks & Little Adventures",
         description:
           "Little by little, we became friends, shared our feelings, and grew closer. We spent long hours talking on bus rides, stayed on phone calls until midnight, met in parks, went out together, and made countless happy memories. There was no single formal proposal; our relationship developed naturally, through time, trust, and the joy of being together. Even as we changed companies, we stayed connected.",
-        image: "/images/sangeet-night.jpg",
+        image: image("sangeet-night.jpg"),
       },
       {
         year: "November 2026",
@@ -84,7 +87,7 @@ export const weddingConfig = {
         location: "Narmadapuram, Madhya Pradesh",
         description:
           "Our journey has carried us through beautiful memories and real challenges, including the effort to earn family approval. Now, on 25 November 2026, we look forward to beginning our married life surrounded by our loved ones, carrying every conversation, every laugh, and every chapter that brought us here into the future we will build together.",
-        image: "/images/mandap-decor.jpg",
+        image: image("mandap-decor.jpg"),
       },
     ],
   },
@@ -109,7 +112,7 @@ export const weddingConfig = {
       dressCodeSwatches: ["#1a237e", "#7b1fa2", "#ffd700", "#000000"],
       description:
         "Get ready to dance the night away with family performances, music, and unforgettable celebrations.",
-      image: "/images/sangeet-night.jpg",
+      image: image("sangeet-night.jpg"),
       calendarParams: { start: "20261124T133000Z", end: "20261124T200000Z" },
       rsvpLabel: "Sangeet Night",
     },
@@ -129,7 +132,7 @@ export const weddingConfig = {
       dressCodeSwatches: ["#fbc02d", "#fff59d", "#ff9800", "#4caf50"],
       description:
         "Join us for traditional henna artistry, laughter, joyous folk songs, and turmeric blessings as we celebrate together.",
-      image: "/images/haldi-ceremony.jpg",
+      image: image("haldi-ceremony.jpg"),
       calendarParams: { start: "20261125T050000Z", end: "20261125T100000Z" },
       rsvpLabel: "Haldi & Mehendi",
     },
@@ -150,7 +153,7 @@ export const weddingConfig = {
       dressCodeSwatches: ["#800020", "#d4af37", "#fcf6ba", "#4a0011"],
       description:
         "Join us for the Baraat, Jaimala, and sacred wedding rituals around the holy fire in Narmadapuram.",
-      image: "/images/mandap-decor.jpg",
+      image: image("mandap-decor.jpg"),
       calendarParams: { start: "20261125T103000Z", end: "20261125T160000Z" },
       rsvpLabel: "Wedding Pheras",
     },
@@ -170,7 +173,7 @@ export const weddingConfig = {
       dressCodeSwatches: ["#0d0d0d", "#8e24aa", "#c0c0c0", "#bf953f"],
       description:
         "A joyful reception honoring the newly wedded couple, with food, music, and celebration alongside family and friends.",
-      image: "/images/hero-palace.jpg",
+      image: image("hero-palace.jpg"),
       calendarParams: { start: "20261130T134500Z", end: "20261130T184500Z" },
       rsvpLabel: "Royal Reception",
     },
@@ -181,35 +184,35 @@ export const weddingConfig = {
       category: "prewedding",
       title: "A Royal Horizon",
       subtitle: "Pre-Wedding Memories",
-      url: "/images/couple-portrait.jpg",
+      url: image("couple-portrait.jpg"),
     },
     {
       id: 2,
       category: "venue",
       title: "Wedding Venue Memories",
       subtitle: "Wedding Venue",
-      url: "/images/hero-palace.jpg",
+      url: image("hero-palace.jpg"),
     },
     {
       id: 3,
       category: "decor",
       title: "Lakeside Mandap",
       subtitle: "Sacred Floral Fire Setup",
-      url: "/images/mandap-decor.jpg",
+      url: image("mandap-decor.jpg"),
     },
     {
       id: 4,
       category: "decor",
       title: "Sangeet Starlight",
       subtitle: "Sangeet Celebration Decor",
-      url: "/images/sangeet-night.jpg",
+      url: image("sangeet-night.jpg"),
     },
     {
       id: 5,
       category: "prewedding",
       title: "Haldi Warmth",
       subtitle: "Yellow Marigold Sunshine",
-      url: "/images/haldi-ceremony.jpg",
+      url: image("haldi-ceremony.jpg"),
     },
   ],
   rsvp: {
