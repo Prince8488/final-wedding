@@ -73,12 +73,12 @@ export function Footer() {
           <a href="#gallery" className="hover:text-[#d4af37]">
             Gallery
           </a>
-          <a href="#blessings" className="hover:text-[#d4af37]">
+          {/* <a href="#blessings" className="hover:text-[#d4af37]">
             Blessings
           </a>
           <a href="#rsvp" className="hover:text-[#d4af37]">
             RSVP
-          </a>
+          </a> */}
         </div>
 
         <div className="pt-6 border-t border-white/5 text-[#f4eae1]/40 text-[11px] flex flex-col sm:flex-row items-center justify-between gap-2">

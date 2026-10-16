@@ -29,8 +29,8 @@ export function Navbar({
     { name: "Events", href: "#events" },
     { name: "Venue", href: "#venue" },
     { name: "Gallery", href: "#gallery" },
-    { name: "Blessings", href: "#blessings" },
-    { name: "RSVP", href: "#rsvp" },
+    // { name: "Blessings", href: "#blessings" },
+    // { name: "RSVP", href: "#rsvp" },
   ];
 
   return (
@@ -104,13 +104,13 @@ export function Navbar({
             </span>
           </button>
 
-          <a
+          {/* <a
             href="#rsvp"
             className="px-4 py-2 rounded-full bg-gradient-to-r from-[#bf953f] via-[#fcf6ba] to-[#aa771c] text-[#0f0907] font-sans-clean font-semibold text-xs tracking-wider uppercase shadow-md hover:shadow-lg hover:shadow-[#d4af37]/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-1.5"
           >
             <Heart className="w-3.5 h-3.5 fill-[#0f0907]" />
             RSVP
-          </a>
+          </a> */}
         </div>
 
         {/* Mobile menu toggle */}
@@ -163,13 +163,13 @@ export function Navbar({
               {petalsEnabled ? "Petals: On" : "Petals: Off"}
             </button>
 
-            <a
+            {/* <a
               href="#rsvp"
               onClick={() => setMobileMenuOpen(false)}
               className="flex-1 py-2 rounded-lg bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-[#0f0907] text-center text-xs font-sans-clean font-bold uppercase"
             >
               Confirm RSVP
-            </a>
+            </a> */}
           </div>
         </div>
       )}
