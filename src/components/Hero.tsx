@@ -79,12 +79,12 @@ export function Hero() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 w-full max-w-md">
-          <a
+          {/* <a
             href="#rsvp"
             className="w-full sm:w-auto flex-1 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#bf953f] via-[#fcf6ba] to-[#aa771c] text-[#0f0907] font-sans-clean font-bold text-sm tracking-widest uppercase shadow-xl hover:shadow-2xl hover:shadow-[#d4af37]/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center"
           >
             Confirm RSVP
-          </a>
+          </a> */}
 
           <button
             onClick={handleAddToCalendar}
