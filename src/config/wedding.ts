@@ -215,50 +215,50 @@ export const weddingConfig = {
       url: image("haldi-ceremony.jpg"),
     },
   ],
-  rsvp: {
-    guestLimit: 8,
-    defaultDiet: "Traditional Rajasthani Thali & Multi-Cuisine",
-    diets: [
-      {
-        value: "Traditional Rajasthani Thali & Multi-Cuisine",
-        label: "Standard Multi-Cuisine Deluxe",
-      },
-      {
-        value: "Pure Jain (No Onion & Garlic)",
-        label: "Pure Jain (No Onion / Garlic)",
-      },
-      {
-        value: "Strict Sattvic Vegetarian",
-        label: "Strict Sattvic Vegetarian",
-      },
-    ],
-  },
-  blessings: [
-    {
-      id: "1",
-      name: "Rohan & Meera Kapoor",
-      relation: "Groom's Cousin & Family • Mumbai",
-      message:
-        "May your lives be filled with endless laughter, sunset lake cruises, and unconditional warmth. We cannot wait to dance our hearts out at the Sangeet!",
-      date: "Nov 12, 2026",
-    },
-    {
-      id: "2",
-      name: "Dr. Vikram & Shailja Sharma",
-      relation: "Bride's Uncle & Aunt • Jaipur",
-      message:
-        "Dearest {{bride}} & {{groom}}, watching you both grow into such wonderful individuals has been a privilege. May Lord Ganesha bless your sacred union with eternal harmony.",
-      date: "Nov 14, 2026",
-    },
-    {
-      id: "3",
-      name: "Karan Johar & College Crew",
-      relation: "Best Friends • New Delhi",
-      message:
-        "From college canteen debates to your wedding day, we always knew you guys were soulmates! Ready to toast to {{hashtag}}!",
-      date: "Nov 16, 2026",
-    },
-  ],
+  //   rsvp: {
+  //     guestLimit: 8,
+  //     defaultDiet: "Traditional Rajasthani Thali & Multi-Cuisine",
+  //     diets: [
+  //       {
+  //         value: "Traditional Rajasthani Thali & Multi-Cuisine",
+  //         label: "Standard Multi-Cuisine Deluxe",
+  //       },
+  //       {
+  //         value: "Pure Jain (No Onion & Garlic)",
+  //         label: "Pure Jain (No Onion / Garlic)",
+  //       },
+  //       {
+  //         value: "Strict Sattvic Vegetarian",
+  //         label: "Strict Sattvic Vegetarian",
+  //       },
+  //     ],
+  //   },
+  //   blessings: [
+  //     {
+  //       id: "1",
+  //       name: "Rohan & Meera Kapoor",
+  //       relation: "Groom's Cousin & Family • Mumbai",
+  //       message:
+  //         "May your lives be filled with endless laughter, sunset lake cruises, and unconditional warmth. We cannot wait to dance our hearts out at the Sangeet!",
+  //       date: "Nov 12, 2026",
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Dr. Vikram & Shailja Sharma",
+  //       relation: "Bride's Uncle & Aunt • Jaipur",
+  //       message:
+  //         "Dearest {{bride}} & {{groom}}, watching you both grow into such wonderful individuals has been a privilege. May Lord Ganesha bless your sacred union with eternal harmony.",
+  //       date: "Nov 14, 2026",
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Karan Johar & College Crew",
+  //       relation: "Best Friends • New Delhi",
+  //       message:
+  //         "From college canteen debates to your wedding day, we always knew you guys were soulmates! Ready to toast to {{hashtag}}!",
+  //       date: "Nov 16, 2026",
+  //     },
+  //   ],
   gift: {
     title: "No Boxed Gifts, Only Your Blessings",
     message:
