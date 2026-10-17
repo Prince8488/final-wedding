@@ -5,17 +5,17 @@ export const weddingConfig = {
   couple: {
     groom: {
       firstName: "Prince",
-      fullName: "Prince Gupta",
-      familyName: "Gupta",
-      parents: "Mr. Narath Prasad Sah & Mrs. Munni Devi",
+      fullName: "Prince",
+      familyName: "Groom",
+      parents: "Mr. Narath & Mrs. Munni",
       familyMessage:
         "We eagerly look forward to welcoming {{bride}} into our home and family with boundless love.",
     },
     bride: {
       firstName: "Meenakshi",
-      fullName: "Meenakshi Patel",
-      familyName: "Patel",
-      parents: "Mr. Birbal Patel & Mrs. Sunita Patel",
+      fullName: "Meenakshi",
+      familyName: "Bride",
+      parents: "Mr. Birbal & Mrs. Sunita",
       familyMessage:
         "With utmost warmth and happiness, we invite you to bless our daughter as she embarks on this magical journey.",
     },
