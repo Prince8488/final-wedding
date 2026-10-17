@@ -290,7 +290,7 @@ export const weddingConfig = {
   //     },
   //   ],
   gift: {
-    title: "No Boxed Gifts, Only Your Blessings",
+    title: "Your Blessings Are Our Greatest Gift",
     message:
       "Your presence at our wedding celebration is the sweetest gift we could ever ask for. Please bless us with your love, affection, and joyful memories.",
     quote: "Blessings in person are priceless.",
