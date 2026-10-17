@@ -95,6 +95,36 @@ export const weddingConfig = {
     { role: "The Groom", person: "groom" },
     { role: "The Bride", person: "bride" },
   ],
+  familyInviteTokens: {
+    iK7XxhutALuheoIJOyYHpZtBxfGbKqAs: "groom",
+    buaVGRlGsuZHep5P2zBx6lEINTnVcdbo: "bride",
+  },
+  familyNameScenarios: {
+    groom: {
+      groom: {
+        fullName: "Prince Gupta",
+        familyName: "Gupta",
+        parents: "Mr. Narath Prasad Gupta & Mrs. Munni Gupta",
+      },
+      bride: {
+        fullName: "Meenakshi Gupta",
+        familyName: "Gupta",
+        parents: "Mr. Birbal Gupta & Mrs. Sunita Gupta",
+      },
+    },
+    bride: {
+      groom: {
+        fullName: "Prince Patel",
+        familyName: "Patel",
+        parents: "Mr. Narath Prasad Patel & Mrs. Munni Patel",
+      },
+      bride: {
+        fullName: "Meenakshi Patel",
+        familyName: "Patel",
+        parents: "Mr. Birbal Patel & Mrs. Sunita Patel",
+      },
+    },
+  },
   events: [
     {
       id: "sangeet",

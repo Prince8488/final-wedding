@@ -2,6 +2,13 @@ import { Heart, Sparkles, User, ShieldCheck } from "lucide-react";
 import { weddingConfig } from "../config/wedding";
 
 export function CoupleFamily() {
+  const inviteToken = new URLSearchParams(window.location.search).get("invite");
+  const inviteScenario = inviteToken
+    ? weddingConfig.familyInviteTokens[
+        inviteToken as keyof typeof weddingConfig.familyInviteTokens
+      ]
+    : undefined;
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-royal-dark relative">
       <div className="max-w-6xl mx-auto relative z-10">
@@ -20,8 +27,11 @@ export function CoupleFamily() {
 
         {/* Groom & Bride Family Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {weddingConfig.families.map((family, index) => {
+          {weddingConfig.families.map((family) => {
             const person = weddingConfig.couple[family.person];
+            const scenario = inviteScenario
+              ? weddingConfig.familyNameScenarios[inviteScenario][family.person]
+              : person;
 
             return (
               <div
@@ -30,7 +40,7 @@ export function CoupleFamily() {
               >
                 <div className="w-20 h-20 mx-auto rounded-full p-[2px] bg-gradient-to-br from-[#bf953f] to-[#aa771c] mb-4">
                   <div className="w-full h-full rounded-full bg-[#251814] flex items-center justify-center text-[#d4af37]">
-                    {index === 0 ? (
+                    {family.person === "groom" ? (
                       <User className="w-8 h-8" />
                     ) : (
                       <Heart className="w-8 h-8 fill-[#d4af37]/20" />
@@ -42,15 +52,16 @@ export function CoupleFamily() {
                   {family.role}
                 </span>
                 <h3 className="text-3xl font-serif-royal font-bold text-[#fcf6ba] my-1">
-                  {person.fullName}
+                  {scenario.fullName}
                 </h3>
                 <p className="text-xs font-serif-royal text-[#f4eae1]/80 italic mb-6">
-                  {index === 0 ? "Son" : "Daughter"} of {person.parents}
+                  {family.person === "groom" ? "Son" : "Daughter"} of{" "}
+                  {scenario.parents}
                 </p>
 
                 <div className="bg-[#241712] p-4 rounded-2xl border border-[#d4af37]/20 text-xs font-sans-clean text-[#f4eae1]/85 space-y-1.5">
                   <p className="font-semibold text-[#d4af37] uppercase tracking-wider text-[10px]">
-                    {person.familyName} Family
+                    {scenario.familyName} Family
                   </p>
                   <p className="leading-relaxed font-serif-royal italic text-sm">
                     &ldquo;
