@@ -1,33 +1,22 @@
-import { useState } from "react";
-import { Calendar, Clock, MapPin, Sparkles, Navigation } from "lucide-react";
+import { Calendar, Clock, Sparkles, Navigation } from "lucide-react";
 import { weddingConfig } from "../config/wedding";
 
 export function EventSchedule() {
-  const [activeTab, setActiveTab] = useState<
-    "all" | "pre-wedding" | "wedding" | "reception"
-  >("all");
-
-  const { couple, event: weddingEvent, events } = weddingConfig;
-
-  const filteredEvents =
-    activeTab === "all"
-      ? events
-      : events.filter((e) => e.category === activeTab);
+  const { couple, events } = weddingConfig;
 
   const openCalendarForEvent = (ev: (typeof events)[number]) => {
     const title = encodeURIComponent(
       `${ev.name} - ${couple.displayNames} Wedding`,
     );
-    const details = encodeURIComponent(`${ev.subTitle}. ${ev.description}`);
     const location = encodeURIComponent(`${ev.venue}, ${ev.locationDetails}`);
-    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${ev.calendarParams.start}/${ev.calendarParams.end}&details=${details}&location=${location}`;
+    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${ev.calendarParams.start}/${ev.calendarParams.end}&location=${location}`;
     window.open(url, "_blank");
   };
 
   return (
     <section
       id="events"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0d0806] relative"
+      className="py-4 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#0d0806] relative"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -37,7 +26,7 @@ export function EventSchedule() {
             Celebration Itinerary
             <Sparkles className="w-3.5 h-3.5" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
+          <h2 className="text-3xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
             Wedding Events &amp; Schedule
           </h2>
           <p className="text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-3">
@@ -47,38 +36,16 @@ export function EventSchedule() {
           <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4"></div>
         </div>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
-          {[
-            { id: "all", label: "All Functions" },
-            { id: "pre-wedding", label: "Haldi & Sangeet" },
-            { id: "wedding", label: "Wedding Pheras" },
-            { id: "reception", label: "Royal Reception" },
-          ].map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id as any)}
-              className={`px-5 py-2.5 rounded-full text-xs font-sans-clean font-semibold uppercase tracking-wider transition-all duration-300 ${
-                activeTab === tab.id
-                  ? "bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-[#0f0907] shadow-lg shadow-[#d4af37]/20 scale-105"
-                  : "bg-[#1e130f] border border-[#d4af37]/30 text-[#f4eae1]/80 hover:border-[#d4af37]"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
         {/* Events Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {filteredEvents.map((ev) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
+          {events.map((ev) => (
             <div
               key={ev.id}
               className="bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-between hover:border-[#d4af37]/75 transition-all duration-300 group hover:-translate-y-1"
             >
               <div>
                 {/* Event Hero Banner */}
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-44 sm:h-56 overflow-hidden">
                   <img
                     src={ev.image}
                     alt={ev.name}
@@ -87,13 +54,13 @@ export function EventSchedule() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#180f0c] via-[#180f0c]/40 to-transparent"></div>
 
                   {/* Category Pill */}
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#180f0c]/90 border border-[#d4af37]/50 text-[#d4af37] text-[10px] uppercase font-sans-clean font-semibold tracking-wider">
+                  <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#180f0c]/90 border border-[#d4af37]/50 text-[#d4af37] text-xs uppercase font-sans-clean font-semibold tracking-wider">
                     {ev.date}
                   </div>
                 </div>
 
                 {/* Event Body Info */}
-                <div className="p-6 space-y-4">
+                <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
                   <div>
                     <h3 className="text-2xl sm:text-3xl font-serif-royal font-bold text-[#fcf6ba] group-hover:text-[#d4af37] transition-colors">
                       {ev.name}
@@ -109,49 +76,12 @@ export function EventSchedule() {
                       <Clock className="w-4 h-4 text-[#d4af37] shrink-0" />
                       <span>{ev.time}</span>
                     </div>
-                    <div className="flex items-start gap-2.5">
-                      <MapPin className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
-                      <div>
-                        <span className="font-semibold text-[#fcf6ba] block">
-                          {ev.venue}
-                        </span>
-                        <span className="text-[11px] text-[#f4eae1]/70">
-                          {ev.locationDetails}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p className="text-xs font-sans-clean text-[#f4eae1]/80 leading-relaxed">
-                    {ev.description}
-                  </p>
-
-                  {/* Dress code & Color Swatches */}
-                  <div className="pt-2 border-t border-white/10">
-                    <div className="flex items-center justify-between text-xs font-sans-clean">
-                      <span className="text-[#d4af37] font-semibold">
-                        Dress Code:
-                      </span>
-                      <div className="flex items-center gap-1.5">
-                        {ev.dressCodeSwatches.map((color, i) => (
-                          <span
-                            key={i}
-                            className="w-4 h-4 rounded-full border border-white/30 shadow-sm inline-block"
-                            style={{ backgroundColor: color }}
-                            title={color}
-                          ></span>
-                        ))}
-                      </div>
-                    </div>
-                    <span className="text-[11px] text-[#f4eae1]/75 block mt-1 italic font-serif-royal">
-                      {ev.dressCode}
-                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Card Footer Actions */}
-              <div className="p-6 pt-0 flex items-center justify-between gap-3 border-t border-white/5 mt-4">
+              <div className="p-4 sm:p-6 pt-0 flex items-center justify-between gap-3 border-t border-white/5 mt-4">
                 <a
                   href={ev.mapUrl}
                   target="_blank"

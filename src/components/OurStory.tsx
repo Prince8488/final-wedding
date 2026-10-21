@@ -7,27 +7,27 @@ export function OurStory() {
   return (
     <section
       id="story"
-      className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-royal-dark"
+      className="py-4 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-royal-dark"
     >
       {/* Decorative background mandala ambient circle */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4af37]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Title */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-sans-clean font-semibold mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             Our Love Story
             <Sparkles className="w-3.5 h-3.5" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
+          <h2 className="text-3xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
             How Two Souls Became One
           </h2>
           <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4"></div>
         </div>
 
         {/* Featured Story Highlight Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16 bg-[#170e0b]/80 border border-[#d4af37]/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center mb-12 sm:mb-16 bg-[#170e0b]/80 border border-[#d4af37]/30 rounded-3xl p-4 sm:p-10 shadow-2xl backdrop-blur-md">
           <div className="lg:col-span-6 space-y-4">
             <span className="text-xs uppercase tracking-widest text-[#d4af37] font-sans-clean font-semibold">
               Meet The Couple
@@ -51,7 +51,7 @@ export function OurStory() {
               <img
                 src={story.milestones[0].image}
                 alt={couple.displayNames}
-                className="w-full h-[380px] sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[300px] sm:h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0706] via-transparent to-transparent opacity-60"></div>
               <div className="absolute bottom-4 left-4 right-4 p-3 bg-[#170e0b]/90 backdrop-blur-md rounded-xl border border-[#d4af37]/30 text-center">

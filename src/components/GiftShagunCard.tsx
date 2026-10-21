@@ -3,18 +3,18 @@ import { weddingConfig } from "../config/wedding";
 
 export function GiftShagunCard() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0e0806] relative">
+    <section className="py-4 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#0e0806] relative">
       <div className="max-w-3xl mx-auto text-center">
-        <div className="bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-3xl p-8 sm:p-10 shadow-2xl relative overflow-hidden backdrop-blur-md">
+        <div className="bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-3xl p-5 sm:p-10 shadow-2xl relative overflow-hidden backdrop-blur-md">
           <div className="w-14 h-14 rounded-full bg-[#251814] border border-[#d4af37]/50 flex items-center justify-center text-[#d4af37] mx-auto mb-4">
             <Gift className="w-7 h-7" />
           </div>
 
-          <span className="text-[10px] uppercase tracking-widest text-[#d4af37] font-sans-clean font-semibold block mb-1">
+          <span className="text-xs uppercase tracking-widest text-[#d4af37] font-sans-clean font-semibold block mb-1">
             Blessings &amp; Best Wishes
           </span>
 
-          <h3 className="text-3xl font-serif-royal font-bold text-[#fcf6ba] mb-3">
+          <h3 className="text-2xl sm:text-3xl font-serif-royal font-bold text-[#fcf6ba] mb-3">
             {weddingConfig.gift.title}
           </h3>
 

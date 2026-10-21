@@ -12,7 +12,7 @@ export function TravelVenueInfo() {
   return (
     <section
       id="venue"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-royal-dark relative"
+      className="py-4 sm:py-20 px-4 sm:px-6 lg:px-8 bg-royal-dark relative"
     >
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
@@ -22,7 +22,7 @@ export function TravelVenueInfo() {
             Destination {weddingConfig.venue.city}
             <Sparkles className="w-3.5 h-3.5" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
+          <h2 className="text-3xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
             Venue &amp; Travel Guide
           </h2>
           <p className="text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-3">
@@ -33,14 +33,14 @@ export function TravelVenueInfo() {
 
         {/* Venue Showcase Card */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-12">
-          <div className="lg:col-span-7 bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-xl">
+          <div className="lg:col-span-7 bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-3xl p-4 sm:p-8 flex flex-col justify-between shadow-xl">
             <div>
               <div className="flex items-center gap-2 text-[#d4af37] text-xs font-semibold uppercase tracking-wider mb-2">
                 <MapPin className="w-4 h-4" />
                 <span>Primary Celebration Palace</span>
               </div>
 
-              <h3 className="text-3xl font-serif-royal font-bold text-[#fcf6ba] mb-2">
+              <h3 className="text-2xl sm:text-3xl font-serif-royal font-bold text-[#fcf6ba] mb-2">
                 {weddingConfig.venue.name}
               </h3>
               <p className="text-xs font-sans-clean text-[#f4eae1]/80 mb-6 leading-relaxed">
@@ -55,7 +55,7 @@ export function TravelVenueInfo() {
                     <h4 className="font-bold text-[#fcf6ba] mb-0.5">
                       By Air (BHO)
                     </h4>
-                    <p className="text-[11px] text-[#f4eae1]/70">
+                    <p className="text-xs text-[#f4eae1]/70">
                       {weddingConfig.venue.airport}
                     </p>
                   </div>
@@ -67,7 +67,7 @@ export function TravelVenueInfo() {
                     <h4 className="font-bold text-[#fcf6ba] mb-0.5">
                       By Rail (NDPM)
                     </h4>
-                    <p className="text-[11px] text-[#f4eae1]/70">
+                    <p className="text-xs text-[#f4eae1]/70">
                       {weddingConfig.venue.rail}
                     </p>
                   </div>
@@ -76,12 +76,12 @@ export function TravelVenueInfo() {
             </div>
 
             {/* Map Action Button */}
-            <div className="mt-8 pt-4 border-t border-white/10 flex flex-wrap gap-3">
+            <div className="mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
               <a
                 href={weddingConfig.venue.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-[#0f0907] font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-lg"
+                className="w-full sm:w-auto px-6 py-3 rounded-full bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-[#0f0907] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg"
               >
                 <Navigation className="w-4 h-4" />
                 Open Google Maps
@@ -89,7 +89,7 @@ export function TravelVenueInfo() {
 
               <a
                 href={weddingConfig.venue.phoneHref}
-                className="px-6 py-3 rounded-full bg-[#251814] border border-[#d4af37]/40 text-[#fcf6ba] font-semibold text-xs uppercase tracking-wider flex items-center gap-2 hover:border-[#d4af37]"
+                className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#251814] border border-[#d4af37]/40 text-[#fcf6ba] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:border-[#d4af37]"
               >
                 <PhoneCall className="w-4 h-4 text-[#d4af37]" />
                 Call Resort Desk
@@ -108,7 +108,7 @@ export function TravelVenueInfo() {
               <p className="text-xs font-serif-royal font-semibold text-[#fcf6ba]">
                 {weddingConfig.venue.name} Lake Reflection
               </p>
-              <p className="text-[10px] font-sans-clean text-[#d4af37]">
+              <p className="text-xs font-sans-clean text-[#d4af37]">
                 {weddingConfig.venue.city}, {weddingConfig.venue.region}
               </p>
             </div>

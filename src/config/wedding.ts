@@ -21,7 +21,7 @@ export const weddingConfig = {
     },
     displayNames: "Prince & Meenakshi",
     initials: "P&M",
-    hashtag: "#PrinceWedsMeenakshi",
+    hashtag: "#PrinceMeenakshiForever",
   },
   event: {
     displayDate: "Wednesday, November 25, 2026",
@@ -35,7 +35,7 @@ export const weddingConfig = {
   },
   venue: {
     name: "Hotel Meenakshi Rooms & Rooftop Restaurant",
-    shortName: "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram",
+    shortName: "Hotel Meenakshi Rooms & Rooftop",
     address:
       "NH69, near Maruti Showroom, Infinity Cars, Pratap Nagar, Rasuliya, Narmadapuram, Madhya Pradesh 461001",
     city: "Narmadapuram",
@@ -71,7 +71,7 @@ export const weddingConfig = {
         //     location: "Our First Company",
         //     description:
         //       "{{groom}} first saw {{bride}} when she joined the company as an intern. It was love at first sight for him — a feeling that began quietly, before either of them knew how much their story would come to mean.",
-        image: image("couple-portrait.jpg"),
+        image: image("couple-portrait.png"),
       },
       //   {
       //     year: "2018 onwards",
@@ -138,10 +138,6 @@ export const weddingConfig = {
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
         "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
-      dressCode: "Indo-Western Glamour & Sparkle",
-      dressCodeSwatches: ["#1a237e", "#7b1fa2", "#ffd700", "#000000"],
-      description:
-        "Get ready to dance the night away with family performances, music, and unforgettable celebrations.",
       image: image("sangeet-night.jpg"),
       calendarParams: { start: "20261124T133000Z", end: "20261124T200000Z" },
       rsvpLabel: "Sangeet Night",
@@ -158,10 +154,6 @@ export const weddingConfig = {
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
         "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
-      dressCode: "Sunlit Yellow, Ochre & Floral Ethnic",
-      dressCodeSwatches: ["#fbc02d", "#fff59d", "#ff9800", "#4caf50"],
-      description:
-        "Join us for traditional henna artistry, laughter, joyous folk songs, and turmeric blessings as we celebrate together.",
       image: image("haldi-ceremony.jpg"),
       calendarParams: { start: "20261125T050000Z", end: "20261125T100000Z" },
       rsvpLabel: "Haldi & Mehendi",
@@ -179,10 +171,6 @@ export const weddingConfig = {
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
         "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
-      dressCode: "Royal Heritage Traditional (Maroon, Crimson & Ivory Gold)",
-      dressCodeSwatches: ["#800020", "#d4af37", "#fcf6ba", "#4a0011"],
-      description:
-        "Join us for the Baraat, Jaimala, and sacred wedding rituals around the holy fire in Narmadapuram.",
       image: image("mandap-decor.jpg"),
       calendarParams: { start: "20261125T103000Z", end: "20261125T160000Z" },
       rsvpLabel: "Wedding Pheras",
@@ -199,10 +187,6 @@ export const weddingConfig = {
       mapUrl:
         "https://www.google.com/maps/place/Classic+Banquet/@27.0166167,84.8807681,20z/data=!4m17!1m10!3m9!1s0x3993543e3d35a3eb:0x7f4cf210873b3426!2sHotel+Kailash!5m2!4m1!1i2!8m2!3d27.0106433!4d84.873905!16s%2Fg%2F1tkb3j6g!3m5!1s0x39935518b78129d1:0xe8e0692c41c7dcf4!8m2!3d27.0166167!4d84.8807681!16s%2Fg%2F11x026x06t?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
       phoneNumber: "+9779855021524",
-      dressCode: "Formal Tuxedos, Luxe Sarees & Heavy Lehengas",
-      dressCodeSwatches: ["#0d0d0d", "#8e24aa", "#c0c0c0", "#bf953f"],
-      description:
-        "A joyful reception honoring the newly wedded couple, with food, music, and celebration alongside family and friends.",
       image: image("hero-palace.jpg"),
       calendarParams: { start: "20261130T134500Z", end: "20261130T184500Z" },
       rsvpLabel: "Royal Reception",
@@ -212,37 +196,23 @@ export const weddingConfig = {
     {
       id: 1,
       category: "prewedding",
-      title: "A Royal Horizon",
-      subtitle: "Pre-Wedding Memories",
-      url: image("couple-portrait.jpg"),
+      title: "At the Wedding Entrance",
+      subtitle: "Prince & Meenakshi",
+      url: image("couple-portrait.png"),
     },
     {
       id: 2,
       category: "venue",
-      title: "Wedding Venue Memories",
-      subtitle: "Wedding Venue",
-      url: image("hero-palace.jpg"),
+      title: "A Dance Together",
+      subtitle: "A Celebration Moment",
+      url: image("wedding.jpeg"),
     },
     {
       id: 3,
       category: "decor",
-      title: "Lakeside Mandap",
-      subtitle: "Sacred Floral Fire Setup",
-      url: image("mandap-decor.jpg"),
-    },
-    {
-      id: 4,
-      category: "decor",
-      title: "Sangeet Starlight",
-      subtitle: "Sangeet Celebration Decor",
-      url: image("sangeet-night.jpg"),
-    },
-    {
-      id: 5,
-      category: "prewedding",
-      title: "Haldi Warmth",
-      subtitle: "Yellow Marigold Sunshine",
-      url: image("haldi-ceremony.jpg"),
+      title: "Courtyard Portrait",
+      subtitle: "Prince & Meenakshi",
+      url: image("couple.png"),
     },
   ],
   //   rsvp: {

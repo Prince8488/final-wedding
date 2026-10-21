@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Navbar } from "./components/Navbar";
-import { EnvelopeModal } from "./components/EnvelopeModal";
 import { PetalOverlay } from "./components/PetalOverlay";
 import { Hero } from "./components/Hero";
 import { OurStory } from "./components/OurStory";
@@ -15,26 +13,13 @@ import { Footer } from "./components/Footer";
 import { AudioPlayer } from "./components/AudioPlayer";
 
 export default function App() {
-  const [showEnvelope, setShowEnvelope] = useState<boolean>(true);
-  const [petalsEnabled, setPetalsEnabled] = useState<boolean>(true);
-
   return (
     <div className="min-h-screen bg-[#0b0706] text-[#f4eae1] font-sans-clean selection:bg-[#d4af37] selection:text-[#0f0907] relative overflow-x-hidden">
-      {/* Interactive Unboxing Envelope Modal */}
-      <EnvelopeModal
-        isOpen={showEnvelope}
-        onOpen={() => setShowEnvelope(false)}
-      />
-
       {/* Ambient Floating Marigold & Rose Petals */}
-      <PetalOverlay enabled={petalsEnabled} />
+      <PetalOverlay enabled />
 
       {/* Sticky Navigation Header */}
-      <Navbar
-        onReopenEnvelope={() => setShowEnvelope(true)}
-        petalsEnabled={petalsEnabled}
-        onTogglePetals={() => setPetalsEnabled(!petalsEnabled)}
-      />
+      <Navbar />
 
       {/* Main Website Sections */}
       <main>
