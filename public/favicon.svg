@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bf953f" />
+      <stop offset="35%" stop-color="#fcf6ba" />
+      <stop offset="70%" stop-color="#b38728" />
+      <stop offset="100%" stop-color="#aa771c" />
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1f120e" />
+      <stop offset="100%" stop-color="#0b0706" />
+    </radialGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bg)" stroke="url(#gold)" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="43" fill="none" stroke="url(#gold)" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.6" />
+  <!-- Sacred Om Symbol in Royal Gold -->
+  <text x="50" y="65" font-family="'Cormorant Garamond', serif, 'Arial Unicode MS'" font-size="44" font-weight="bold" fill="url(#gold)" text-anchor="middle">ॐ</text>
+</svg>
