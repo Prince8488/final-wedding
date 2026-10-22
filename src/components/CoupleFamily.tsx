@@ -81,7 +81,7 @@ export function CoupleFamily() {
         </div>
 
         {/* Warm Invitation Note */}
-        <div className="bg-gradient-to-r from-[#211410] via-[#2a1b15] to-[#211410] border border-[#d4af37]/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 text-center shadow-xl">
+        {/* <div className="bg-gradient-to-r from-[#211410] via-[#2a1b15] to-[#211410] border border-[#d4af37]/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 text-center shadow-xl">
           <ShieldCheck className="w-7 h-7 sm:w-8 sm:h-8 text-[#d4af37] mx-auto mb-2.5 sm:mb-3" />
           <h4 className="text-xl sm:text-2xl lg:text-3xl font-serif-royal font-bold text-[#fcf6ba] mb-2 sm:mb-3">
             Your Presence is Our Greatest Gift
@@ -91,7 +91,7 @@ export function CoupleFamily() {
             your presence, prayers, and heartfelt blessings will make our
             celebration complete.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
