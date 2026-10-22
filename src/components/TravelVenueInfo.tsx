@@ -101,6 +101,8 @@ export function TravelVenueInfo() {
             <img
               src={weddingConfig.venue.image}
               alt={weddingConfig.venue.imageAlt}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0b0706] via-transparent to-transparent opacity-70"></div>

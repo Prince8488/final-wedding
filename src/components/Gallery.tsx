@@ -48,6 +48,8 @@ export function Gallery() {
               <img
                 src={photo.url}
                 alt={photo.title}
+                loading="lazy"
+                decoding="async"
                 className={`w-full h-full object-cover transition-transform duration-700 ${
                   photo.id === 1 ? "object-top" : "group-hover:scale-110"
                 }`}
@@ -82,6 +84,7 @@ export function Gallery() {
             <img
               src={selectedPhoto.url}
               alt={selectedPhoto.title}
+              decoding="async"
               className="w-full max-h-[75vh] object-contain rounded-2xl"
             />
           </div>

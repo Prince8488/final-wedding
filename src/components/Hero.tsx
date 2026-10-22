@@ -25,6 +25,9 @@ export function Hero() {
         <img
           src={weddingConfig.hero.image}
           alt={weddingConfig.hero.imageAlt}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-110"
         />
         {/* Layered Gradient overlays for ultra-readability and rich mood */}

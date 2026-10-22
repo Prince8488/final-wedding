@@ -4,12 +4,15 @@
   .font-serif-royal {
     font-family: 'Cormorant Garamond', Georgia, serif;
   }
+
   .font-script {
     font-family: 'Great Vibes', cursive;
   }
+
   .font-cinzel {
     font-family: 'Cinzel Decorative', serif;
   }
+
   .font-sans-clean {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
@@ -33,7 +36,7 @@
 /* Royal Dark Velvet Background with Subtle Mandala Grid */
 .bg-royal-dark {
   background-color: #0b0706;
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 0%, rgba(191, 149, 63, 0.15) 0%, transparent 60%),
     radial-gradient(circle at 0% 100%, rgba(136, 14, 79, 0.2) 0%, transparent 50%),
     radial-gradient(circle at 100% 50%, rgba(184, 134, 11, 0.12) 0%, transparent 50%);
@@ -59,7 +62,7 @@
 /* Light Theme alternative option */
 .bg-royal-light {
   background-color: #faf6f0;
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, transparent 70%),
     radial-gradient(circle at 100% 100%, rgba(244, 212, 187, 0.3) 0%, transparent 60%);
 }
@@ -70,33 +73,90 @@
   border: 1px solid rgba(191, 149, 63, 0.3);
 }
 
-/* Floating Animation for Petals */
-@keyframes floatPetal {
+/* Floating Animation for Petals - Smooth organic flutter and drift */
+@keyframes floatPetal1 {
   0% {
-    transform: translateY(-10vh) rotate(0deg) translateX(0);
+    transform: translateY(0) rotate(0deg) translateX(0);
     opacity: 0;
   }
+
   10% {
-    opacity: 0.8;
+    opacity: 0.85;
+    transform: translateY(12vh) rotate(35deg) translateX(25px);
   }
+
+  35% {
+    transform: translateY(40vh) rotate(110deg) translateX(-15px);
+  }
+
+  65% {
+    transform: translateY(72vh) rotate(210deg) translateX(30px);
+  }
+
   90% {
-    opacity: 0.8;
+    opacity: 0.85;
+    transform: translateY(102vh) rotate(300deg) translateX(-10px);
   }
+
   100% {
-    transform: translateY(105vh) rotate(360deg) translateX(100px);
+    transform: translateY(118vh) rotate(360deg) translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes floatPetal2 {
+  0% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.85;
+    transform: translateY(12vh) rotate(-35deg) translateX(-25px);
+  }
+
+  35% {
+    transform: translateY(40vh) rotate(-110deg) translateX(15px);
+  }
+
+  65% {
+    transform: translateY(72vh) rotate(-210deg) translateX(-25px);
+  }
+
+  90% {
+    opacity: 0.85;
+    transform: translateY(102vh) rotate(-300deg) translateX(10px);
+  }
+
+  100% {
+    transform: translateY(118vh) rotate(-360deg) translateX(-15px);
     opacity: 0;
   }
 }
 
 .animate-petal {
-  animation: floatPetal 14s linear infinite;
+  animation: floatPetal1 14s linear infinite both;
+  will-change: transform, opacity;
+}
+
+.animate-petal-1 {
+  animation: floatPetal1 14s linear infinite both;
+  will-change: transform, opacity;
+}
+
+.animate-petal-2 {
+  animation: floatPetal2 14s linear infinite both;
+  will-change: transform, opacity;
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.4;
     filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
   }
+
   50% {
     opacity: 0.9;
     filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.8));
@@ -111,13 +171,16 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #0d0806;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #4a381e;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #b38728;
 }
