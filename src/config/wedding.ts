@@ -158,7 +158,7 @@ export const weddingConfig = {
       name: "Sangeet & Engagement",
       subTitle: "Starlight, Beats & High Spirits",
       date: "Tuesday, Nov 24, 2026",
-      time: "7:00 PM onwards",
+      time: "6:00 PM onwards",
       venue: "Hotel Meenakshi Rooms & Rooftop Restaurant",
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
@@ -191,7 +191,7 @@ export const weddingConfig = {
       name: "Baraat & Sacred Pheras",
       subTitle: "The Royal Union & Vows",
       date: "Wednesday, Nov 25, 2026",
-      time: "4:00 PM onwards",
+      time: "3:00 PM onwards",
       venue: "Hotel Meenakshi Rooms & Rooftop Restaurant",
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
@@ -207,7 +207,7 @@ export const weddingConfig = {
       name: "Grand Royal Reception",
       subTitle: "An Evening of Elegance & Gratitude",
       date: "Monday, Nov 30, 2026",
-      time: "7:30 PM onwards",
+      time: "6:00 PM onwards",
       venue: "Classic Banquet",
       locationDetails: "Birgunj, Madhesh Province 44300, Nepal",
       mapUrl:
