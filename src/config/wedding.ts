@@ -41,11 +41,37 @@ export const weddingConfig = {
     city: "Narmadapuram",
     region: "Madhya Pradesh",
     mapUrl:
-      "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/data=!4m20!1m10!3m9!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!2sHotel+Meenakshi+Rooms+%26+Rooftop+Restaurant!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.7410671,77.717884,17z/data=!3m1!4b1!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D",
     phoneNumber: "09708080804",
     phoneHref: "tel:+919708080804",
-    image: image("hero-palace.webp"),
-    imageAlt: "Wedding celebration venue",
+    image: image("hotel-meenakshi-rooftop.webp"),
+    imageAlt: "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram",
+    photos: [
+      {
+        id: "rooftop",
+        label: "Rooftop Terrace",
+        title: "Rooftop Restaurant & Sunset View",
+        url: image("hotel-meenakshi-rooftop.webp"),
+      },
+      {
+        id: "facade",
+        label: "Hotel Facade",
+        title: "Main Building & Grand Entrance",
+        url: image("hotel-meenakshi-facade.webp"),
+      },
+      {
+        id: "lobby",
+        label: "Reception",
+        title: "Welcome Lounge & Crystal Chandeliers",
+        url: image("hotel-meenakshi-lobby.webp"),
+      },
+      {
+        id: "dining",
+        label: "Dining Hall",
+        title: "Air-Conditioned Banquet Restaurant",
+        url: image("hotel-meenakshi-dining.webp"),
+      },
+    ],
     description:
       "Located in Narmadapuram, Madhya Pradesh, the venue welcomes family and friends to celebrate the wedding.",
     airport:
@@ -137,7 +163,7 @@ export const weddingConfig = {
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
-        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
+        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.7410671,77.717884,17z/data=!3m1!4b1!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D",
       image: image("sangeet-night.webp"),
       calendarParams: { start: "20261124T133000Z", end: "20261124T200000Z" },
       rsvpLabel: "Sangeet Night",
@@ -153,7 +179,7 @@ export const weddingConfig = {
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
-        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
+        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.7410671,77.717884,17z/data=!3m1!4b1!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D",
       image: image("haldi-ceremony.webp"),
       calendarParams: { start: "20261125T050000Z", end: "20261125T100000Z" },
       rsvpLabel: "Haldi & Mehendi",
@@ -170,7 +196,7 @@ export const weddingConfig = {
       locationDetails:
         "Hotel Meenakshi Rooms & Rooftop Restaurant, Narmadapuram, Madhya Pradesh",
       mapUrl:
-        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.741072,77.717884,17z/data=!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D/",
+        "https://www.google.com/maps/place/Hotel+Meenakshi+Rooms+%26+Rooftop+Restaurant/@22.7410671,77.717884,17z/data=!3m1!4b1!4m9!3m8!1s0x397dcf10b9fb7a59:0x71131b4e1f7c3fc2!5m2!4m1!1i2!8m2!3d22.7410671!4d77.7204643!16s%2Fg%2F11j8t1p62l?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D",
       image: image("mandap-decor.webp"),
       calendarParams: { start: "20261125T103000Z", end: "20261125T160000Z" },
       rsvpLabel: "Wedding Pheras",
