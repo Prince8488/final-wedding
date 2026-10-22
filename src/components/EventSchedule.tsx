@@ -1,4 +1,4 @@
-import { Calendar, Clock, Sparkles, Navigation } from "lucide-react";
+import { Calendar, Clock, Sparkles, Navigation, MapPin } from "lucide-react";
 import { weddingConfig } from "../config/wedding";
 
 export function EventSchedule() {
@@ -16,87 +16,89 @@ export function EventSchedule() {
   return (
     <section
       id="events"
-      className="py-4 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#0d0806] relative"
+      className="py-4 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#0d0806] relative"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-sans-clean font-semibold mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             Celebration Itinerary
             <Sparkles className="w-3.5 h-3.5" />
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
+          <h2 className="text-3xl sm:text-4xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
             Wedding Events &amp; Schedule
           </h2>
-          <p className="text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-3">
+          <p className="text-xs sm:text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-2">
             Four days of love, music, tradition, and joyous festivities in{" "}
             {weddingConfig.venue.city}.
           </p>
-          <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4"></div>
+          <div className="w-20 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-3"></div>
         </div>
 
-        {/* Events Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
+        {/* Compact Events Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
           {events.map((ev) => (
             <div
               key={ev.id}
-              className="bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-between hover:border-[#d4af37]/75 transition-all duration-300 group hover:-translate-y-1"
+              className="bg-[#170e0b]/90 border border-[#d4af37]/30 hover:border-[#d4af37]/80 rounded-2xl p-4 sm:p-5 shadow-xl backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group relative overflow-hidden"
             >
-              <div>
-                {/* Event Hero Banner */}
-                <div className="relative h-44 sm:h-56 overflow-hidden">
-                  <img
-                    src={ev.image}
-                    alt={ev.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#180f0c] via-[#180f0c]/40 to-transparent"></div>
+              {/* Subtle gold corner accent */}
+              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#d4af37]/10 to-transparent pointer-events-none rounded-tr-2xl"></div>
 
-                  {/* Category Pill */}
-                  <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#180f0c]/90 border border-[#d4af37]/50 text-[#d4af37] text-xs uppercase font-sans-clean font-semibold tracking-wider">
+              <div>
+                {/* Header: Date Pill + Category */}
+                <div className="flex items-center justify-between gap-2 mb-2.5">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#251814] border border-[#d4af37]/40 text-[#fcf6ba] text-xs font-sans-clean font-semibold tracking-wide">
+                    <Calendar className="w-3.5 h-3.5 text-[#d4af37]" />
                     {ev.date}
-                  </div>
+                  </span>
+                  <span className="text-[10px] uppercase font-sans-clean font-medium tracking-widest text-[#d4af37]/80">
+                    {ev.category === "pre-wedding"
+                      ? "Pre-Wedding"
+                      : ev.category === "wedding"
+                        ? "Main Wedding"
+                        : "Reception"}
+                  </span>
                 </div>
 
-                {/* Event Body Info */}
-                <div className="p-4 sm:p-6 space-y-3 sm:space-y-4">
-                  <div>
-                    <h3 className="text-2xl sm:text-3xl font-serif-royal font-bold text-[#fcf6ba] group-hover:text-[#d4af37] transition-colors">
-                      {ev.name}
-                    </h3>
-                    <p className="text-xs font-serif-royal italic text-[#d4af37]/90 mt-0.5">
-                      {ev.subTitle}
-                    </p>
-                  </div>
+                {/* Event Title & Subtitle */}
+                <h3 className="text-xl sm:text-2xl font-serif-royal font-bold text-[#fcf6ba] group-hover:text-[#d4af37] transition-colors">
+                  {ev.name}
+                </h3>
+                <p className="text-xs font-serif-royal italic text-[#d4af37]/90 mt-0.5 mb-3">
+                  {ev.subTitle}
+                </p>
 
-                  {/* Time & Venue info */}
-                  <div className="space-y-2 text-xs font-sans-clean text-[#f4eae1]/90 bg-[#251814]/70 p-4 rounded-2xl border border-[#d4af37]/20">
-                    <div className="flex items-center gap-2.5">
-                      <Clock className="w-4 h-4 text-[#d4af37] shrink-0" />
-                      <span>{ev.time}</span>
-                    </div>
+                {/* Time & Venue Info */}
+                <div className="space-y-2 text-xs font-sans-clean text-[#f4eae1]/85 bg-[#201410]/70 p-3 sm:p-3.5 rounded-xl border border-[#d4af37]/20">
+                  <div className="flex items-start gap-2">
+                    <Clock className="w-3.5 h-3.5 text-[#d4af37] shrink-0 mt-0.5" />
+                    <span className="leading-snug">{ev.time}</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <MapPin className="w-3.5 h-3.5 text-[#d4af37] shrink-0 mt-0.5" />
+                    <span className="leading-snug text-[#f4eae1]/75">
+                      {ev.venue}
+                    </span>
                   </div>
                 </div>
               </div>
 
-              {/* Card Footer Actions */}
-              <div className="p-4 sm:p-6 pt-0 flex items-center justify-between gap-3 border-t border-white/5 mt-4">
+              {/* Action Buttons */}
+              <div className="flex items-center gap-2.5 pt-3.5 mt-3.5 border-t border-white/5">
                 <a
                   href={ev.mapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2.5 px-3 rounded-xl bg-[#281b16] hover:bg-[#38261e] border border-[#d4af37]/30 text-[#fcf6ba] text-xs font-sans-clean font-medium flex items-center justify-center gap-1.5 transition-colors"
+                  className="flex-1 py-2 px-3 rounded-xl bg-[#281b16] hover:bg-[#38261e] border border-[#d4af37]/30 text-[#fcf6ba] text-xs font-sans-clean font-medium flex items-center justify-center gap-1.5 transition-colors"
                 >
                   <Navigation className="w-3.5 h-3.5 text-[#d4af37]" />
-                  Map &amp; Directions
+                  Map
                 </a>
-
                 <button
                   onClick={() => openCalendarForEvent(ev)}
-                  className="flex-1 py-2.5 px-3 rounded-xl bg-gradient-to-r from-[#bf953f] to-[#aa771c] text-[#0f0907] text-xs font-sans-clean font-bold uppercase flex items-center justify-center gap-1.5 shadow-md hover:shadow-lg transition-all"
+                  className="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-[#bf953f] to-[#aa771c] hover:from-[#d4af37] hover:to-[#bf953f] text-[#0f0907] text-xs font-sans-clean font-bold uppercase flex items-center justify-center gap-1.5 shadow transition-all"
                 >
                   <Calendar className="w-3.5 h-3.5" />
                   Save Event
