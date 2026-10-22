@@ -18,23 +18,23 @@ export function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-4 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#0b0706] relative"
+      className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#0b0706] relative"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-sans-clean font-semibold mb-2">
-            <Sparkles className="w-3.5 h-3.5" />
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#d4af37] font-sans-clean font-semibold mb-2">
+            <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
             Visual Memories
-            <Sparkles className="w-3.5 h-3.5" />
+            <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide leading-snug">
             Photo Gallery &amp; Glimpses
           </h2>
-          <p className="text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-3">
+          <p className="text-xs sm:text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-2 sm:mt-3">
             Moments captured in time as we prepare for our royal wedding day.
           </p>
-          <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4"></div>
+          <div className="w-20 sm:w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-3 sm:mt-4"></div>
         </div>
 
         {/* Gallery Grid */}
@@ -43,7 +43,7 @@ export function Gallery() {
             <div
               key={photo.id}
               onClick={() => setSelectedPhoto(photo)}
-              className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-[#d4af37]/30 shadow-xl cursor-pointer group hover:border-[#d4af37] transition-all"
+              className="relative h-72 sm:h-80 md:h-72 lg:h-80 rounded-2xl overflow-hidden border border-[#d4af37]/30 shadow-xl cursor-pointer group hover:border-[#d4af37] transition-all"
             >
               <img
                 src={photo.url}

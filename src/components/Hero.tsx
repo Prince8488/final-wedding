@@ -19,7 +19,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-between pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-between pt-4 pb-8 sm:pb-12 px-3 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background Image with Gold Overlay Gradients */}
       <div className="absolute inset-0 z-0">
         <img
@@ -36,47 +36,47 @@ export function Hero() {
       </div>
 
       {/* Decorative Golden Arch Border Frame */}
-      <div className="absolute inset-4 sm:inset-8 border border-[#d4af37]/25 pointer-events-none z-10 rounded-3xl">
-        <div className="absolute -top-px -left-px h-14 w-14 rounded-tl-[2rem] border-l border-t border-[#e0c78f]/80">
-          <Sparkles className="absolute -left-1 -top-1 h-4 w-4 text-[#e0c78f]" />
+      <div className="absolute inset-2.5 sm:inset-6 lg:inset-8 border border-[#d4af37]/25 pointer-events-none z-10 rounded-2xl sm:rounded-3xl">
+        <div className="absolute -top-px -left-px h-10 sm:h-14 w-10 sm:w-14 rounded-tl-2xl sm:rounded-tl-[2rem] border-l border-t border-[#e0c78f]/80">
+          <Sparkles className="absolute -left-1 -top-1 h-3.5 sm:h-4 w-3.5 sm:w-4 text-[#e0c78f]" />
         </div>
-        <div className="absolute -top-px -right-px h-14 w-14 rounded-tr-[2rem] border-r border-t border-[#e0c78f]/80">
-          <Sparkles className="absolute -right-1 -top-1 h-4 w-4 text-[#e0c78f]" />
+        <div className="absolute -top-px -right-px h-10 sm:h-14 w-10 sm:w-14 rounded-tr-2xl sm:rounded-tr-[2rem] border-r border-t border-[#e0c78f]/80">
+          <Sparkles className="absolute -right-1 -top-1 h-3.5 sm:h-4 w-3.5 sm:w-4 text-[#e0c78f]" />
         </div>
       </div>
 
       {/* Content Container */}
-      <div className="relative z-20 max-w-4xl mx-auto text-center flex-1 flex flex-col items-center justify-center py-4">
+      <div className="relative z-20 max-w-4xl mx-auto text-center flex-1 flex flex-col items-center justify-center py-4 sm:py-6 px-1">
         {/* Sacred Ganesh Header */}
         <GaneshHeader />
 
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1e130f]/80 border border-[#d4af37]/40 text-[#fcf6ba] text-xs font-sans-clean mb-4 shadow-lg backdrop-blur-sm">
-          <Sparkles className="w-3.5 h-3.5 text-[#d4af37] animate-pulse" />
-          <span className="tracking-wider uppercase font-semibold text-xs">
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-[#1e130f]/80 border border-[#d4af37]/40 text-[#fcf6ba] text-[10px] sm:text-xs font-sans-clean mb-3 sm:mb-4 shadow-lg backdrop-blur-sm">
+          <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-[#d4af37] animate-pulse" />
+          <span className="tracking-widest uppercase font-semibold">
             {weddingConfig.hero.tagline}
           </span>
         </div>
 
-        {/* Couple Names Banner */}
-        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-script gold-text-gradient py-2 my-2 drop-shadow-2xl">
+        {/* Couple Names Banner - Responsive fluid text sizing */}
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-script gold-text-gradient py-1 sm:py-2 my-1 sm:my-2 leading-tight drop-shadow-2xl">
           {weddingConfig.couple.displayNames}
         </h1>
 
         {/* Family Blessing Intro */}
-        <p className="font-serif-royal italic text-lg sm:text-2xl text-[#f4eae1]/95 max-w-2xl leading-relaxed my-3 font-medium">
+        <p className="font-serif-royal italic text-base sm:text-xl lg:text-2xl text-[#f4eae1]/95 max-w-2xl leading-relaxed my-2 sm:my-3 font-medium px-2">
           &ldquo;{weddingConfig.hero.invitation}&rdquo;
         </p>
 
         {/* Date & Location Pill */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 my-6 text-sm font-sans-clean font-medium text-[#fcf6ba] bg-[#1a0f0c]/85 border border-[#d4af37]/40 py-3 px-6 rounded-2xl shadow-xl backdrop-blur-md">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 my-4 sm:my-6 text-xs sm:text-sm font-sans-clean font-medium text-[#fcf6ba] bg-[#1a0f0c]/85 border border-[#d4af37]/40 py-2.5 sm:py-3 px-4 sm:px-6 rounded-2xl shadow-xl backdrop-blur-md">
           <div className="flex items-center justify-center gap-2 text-center">
-            <Calendar className="w-4 h-4 text-[#d4af37]" />
+            <Calendar className="w-4 h-4 text-[#d4af37] shrink-0" />
             <span>{weddingConfig.event.displayDate}</span>
           </div>
           <span className="hidden sm:inline text-[#d4af37]/40">&bull;</span>
-          <div className="flex items-center justify-center gap-2 text-center">
-            <MapPin className="w-4 h-4 text-[#d4af37]" />
-            <span className="max-w-[260px] text-left leading-snug">
+          <div className="flex items-center justify-center gap-2 text-center sm:text-left">
+            <MapPin className="w-4 h-4 text-[#d4af37] shrink-0" />
+            <span className="max-w-[280px] leading-snug">
               {weddingConfig.venue.shortName}
             </span>
           </div>
@@ -86,10 +86,10 @@ export function Hero() {
         <CountdownTimer targetDateStr={weddingConfig.event.countdownTarget} />
 
         {/* Action Buttons */}
-        <div className="flex items-center justify-center mt-6 w-full max-w-md">
+        <div className="flex items-center justify-center mt-4 sm:mt-6 w-full max-w-md px-4">
           <button
             onClick={handleAddToCalendar}
-            className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#1d120e] hover:bg-[#2a1b15] border border-[#d4af37]/60 text-[#fcf6ba] font-sans-clean font-semibold text-xs tracking-wider uppercase shadow-lg transition-all flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-6 py-3 sm:py-3.5 rounded-full bg-[#1d120e] hover:bg-[#2a1b15] border border-[#d4af37]/60 text-[#fcf6ba] font-sans-clean font-semibold text-xs tracking-wider uppercase shadow-lg transition-all flex items-center justify-center gap-2"
           >
             <Calendar className="w-4 h-4 text-[#d4af37]" />
             Add to Calendar

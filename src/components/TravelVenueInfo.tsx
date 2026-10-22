@@ -18,63 +18,63 @@ export function TravelVenueInfo() {
   return (
     <section
       id="venue"
-      className="py-4 sm:py-20 px-4 sm:px-6 lg:px-8 bg-royal-dark relative"
+      className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-royal-dark relative"
     >
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.25em] text-[#d4af37] font-sans-clean font-semibold mb-2">
-            <Sparkles className="w-3.5 h-3.5" />
+        <div className="text-center mb-8 sm:mb-12 lg:mb-14">
+          <div className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-[#d4af37] font-sans-clean font-semibold mb-2">
+            <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
             Destination {weddingConfig.venue.city}
-            <Sparkles className="w-3.5 h-3.5" />
+            <Sparkles className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
           </div>
-          <h2 className="text-3xl sm:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif-royal font-bold text-[#fcf6ba] tracking-wide leading-snug">
             Venue &amp; Travel Guide
           </h2>
-          <p className="text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-2">
+          <p className="text-xs sm:text-sm font-sans-clean text-[#f4eae1]/80 max-w-xl mx-auto mt-2 sm:mt-3">
             Everything you need for a smooth journey to the wedding celebrations in {weddingConfig.venue.city}.
           </p>
-          <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4"></div>
+          <div className="w-20 sm:w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-3 sm:mt-4"></div>
         </div>
 
         {/* Venue Showcase Card */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch mb-8 sm:mb-12">
           {/* Left Column: Details & Transit */}
-          <div className="lg:col-span-7 bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-3xl p-5 sm:p-8 flex flex-col justify-between shadow-xl">
+          <div className="lg:col-span-7 bg-[#180f0c]/90 border border-[#d4af37]/35 rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-8 flex flex-col justify-between shadow-xl">
             <div>
-              <div className="flex items-center gap-2 text-[#d4af37] text-xs font-semibold uppercase tracking-wider mb-2">
+              <div className="flex items-center gap-2 text-[#d4af37] text-[11px] sm:text-xs font-semibold uppercase tracking-wider mb-2">
                 <MapPin className="w-4 h-4" />
                 <span>Wedding Celebration Venue</span>
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-serif-royal font-bold text-[#fcf6ba] mb-2">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-serif-royal font-bold text-[#fcf6ba] mb-2">
                 {weddingConfig.venue.name}
               </h3>
-              <p className="text-xs font-sans-clean text-[#f4eae1]/80 mb-6 leading-relaxed">
+              <p className="text-xs font-sans-clean text-[#f4eae1]/80 mb-5 sm:mb-6 leading-relaxed">
                 {weddingConfig.venue.address}. {weddingConfig.venue.description}
               </p>
 
               {/* Transit Details */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans-clean">
-                <div className="p-4 rounded-2xl bg-[#241712] border border-[#d4af37]/20 flex items-start gap-3">
-                  <Plane className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-xs font-sans-clean">
+                <div className="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#241712] border border-[#d4af37]/20 flex items-start gap-3">
+                  <Plane className="w-4 sm:w-5 h-4 sm:h-5 text-[#d4af37] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-[#fcf6ba] mb-0.5">
+                    <h4 className="font-bold text-[#fcf6ba] mb-0.5 text-xs sm:text-sm">
                       By Air (BHO)
                     </h4>
-                    <p className="text-xs text-[#f4eae1]/70 leading-relaxed">
+                    <p className="text-[11px] sm:text-xs text-[#f4eae1]/70 leading-relaxed">
                       {weddingConfig.venue.airport}
                     </p>
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-[#241712] border border-[#d4af37]/20 flex items-start gap-3">
-                  <Train className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
+                <div className="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#241712] border border-[#d4af37]/20 flex items-start gap-3">
+                  <Train className="w-4 sm:w-5 h-4 sm:h-5 text-[#d4af37] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-[#fcf6ba] mb-0.5">
+                    <h4 className="font-bold text-[#fcf6ba] mb-0.5 text-xs sm:text-sm">
                       By Rail (NDPM)
                     </h4>
-                    <p className="text-xs text-[#f4eae1]/70 leading-relaxed">
+                    <p className="text-[11px] sm:text-xs text-[#f4eae1]/70 leading-relaxed">
                       {weddingConfig.venue.rail}
                     </p>
                   </div>
@@ -83,12 +83,12 @@ export function TravelVenueInfo() {
             </div>
 
             {/* Map Action Button */}
-            <div className="mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+            <div className="mt-6 sm:mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
               <a
                 href={weddingConfig.venue.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-6 py-3 rounded-full bg-gradient-to-r from-[#bf953f] to-[#aa771c] hover:from-[#d4af37] hover:to-[#bf953f] text-[#0f0907] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-all"
+                className="w-full sm:w-auto px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-[#bf953f] to-[#aa771c] hover:from-[#d4af37] hover:to-[#bf953f] text-[#0f0907] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-all"
               >
                 <Navigation className="w-4 h-4" />
                 Open Google Maps
@@ -96,7 +96,7 @@ export function TravelVenueInfo() {
 
               <a
                 href={weddingConfig.venue.phoneHref}
-                className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#251814] hover:bg-[#34221b] border border-[#d4af37]/40 text-[#fcf6ba] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:border-[#d4af37] transition-all"
+                className="w-full sm:w-auto px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#251814] hover:bg-[#34221b] border border-[#d4af37]/40 text-[#fcf6ba] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:border-[#d4af37] transition-all"
               >
                 <PhoneCall className="w-4 h-4 text-[#d4af37]" />
                 Call Resort Desk
